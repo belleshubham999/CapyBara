@@ -1,0 +1,16 @@
+model:
+  model_path: "models/Gemma-4-E4B-it-UD-IQ2_M.gguf"
+  n_ctx: 4096
+  n_gpu_layers: 0
+
+runtime:
+  visual_token_budget: 70
+  enable_tool_calling: true
+  stream_reasoning: true
+  kv_cache_quantized: true
+  mmap: true
+  type_k: 8
+  type_v: 8
+  flash_attn: true
+
+  allow_system_wide_file_access: true
